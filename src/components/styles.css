@@ -56,13 +56,16 @@
 .todos {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px 30px;
+    margin: 15px auto;
     border-radius: 10px;
-    width: 90%;
+    width: 75%;
+    background-color: #4869f0;
   }
   .todos__heading {
     font-size: 2rem;
     color: #fff;
+    text-align: center;
   }
   
   .todos__single {
@@ -70,7 +73,12 @@
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
-    background-color: #4869f0;
+    background-color: #0b6630;
+    transition: 0.2s;
+  }
+  .todos__single:hover {
+    box-shadow: 0 0 5px #000;
+    transform: scale(1.05);
   }
   .todos__single--text {
     flex: 1;
@@ -89,21 +97,22 @@
     cursor: pointer;
   }
   
-  @media (max-width: 1200px) {
-    .todos__single {
-      width: 40%;
-    }
-  }
-  
+
   @media (max-width: 700px) {
     .input {
       width: 95%;
     }
     .todos {
       width: 95%;
+      margin-bottom: 1rem;
     }
     .todos__single {
       width: 100%;
     }
+    .container {
+      width: 95%;
+      flex-direction: column;
+    }
   }
+
 

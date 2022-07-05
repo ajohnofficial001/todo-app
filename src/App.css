@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-
-.App {
+ body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-color: rgb(213, 191, 50);
+ }
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(213, 191, 50);
   font-family: "Dancing Script", cursive;
 }
 
