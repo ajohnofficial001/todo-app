@@ -52,27 +52,32 @@
     align-items: flex-start;
 }
 
- 
+div .icon {
+  color: #4869f0;
+}
 .todos {
     display: flex;
     flex-direction: column;
     padding: 20px 30px;
     margin: 15px auto;
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     width: 75%;
     background-color: #4869f0;
   }
   .todos__heading {
     font-size: 2rem;
-    color: #fff;
+    color: #0b6630;
     text-align: center;
   }
   
   .todos__single {
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
+    color: #4869f0;
     background-color: #0b6630;
     transition: 0.2s;
   }
