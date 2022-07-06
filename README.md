@@ -1,3 +1,3 @@
 # Todo App built with React and Typescript
 
-Live @ john-todo.netlify.app
+<a href="john-todo.netlify.app" target="_blank">Live</a> @ john-todo.netlify.app
