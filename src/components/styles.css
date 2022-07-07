@@ -5,6 +5,7 @@
     display: flex;
     width: 60%;
     position: relative;
+    padding-bottom: 1.4rem ;
     align-items: center;
 }
 
@@ -19,7 +20,7 @@
 }
 
 .input__box:focus {
-    box-shadow: 0 0 8px 1000px rgba(213, 191, 50, 0.3);
+    box-shadow: 0 0 8px 1000px rgba(71, 70, 65, 0.3);
     outline: none;
 }
 .input__submit {
@@ -44,13 +45,6 @@
     transform: scale(0.8);
     box-shadow: 0 0 5px #000;
 }
-.container {
-    display: flex;
-    width: 94.5%;
-    margin-top: 10px;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
 div .icon {
   color: #783937ff;
@@ -58,8 +52,8 @@ div .icon {
 .todos {
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
-    margin: 15px auto;
+    padding: 20px 20px 30px;
+    margin: 0 auto;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     width: 75%;
@@ -73,7 +67,7 @@ div .icon {
   
   .todos__single {
     display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
@@ -83,12 +77,12 @@ div .icon {
   }
   .todos__single:hover {
     box-shadow: 0 0 5px #000;
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   .todos__single--text {
     flex: 1;
     border: none;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
   }
   
   .todos__single--text:focus {
@@ -107,8 +101,9 @@ div .icon {
       width: 90%;
     }
     .todos {
-      width: 98%;
-      margin-bottom: 1.5rem;
+      min-width: 96.5% !important;
+      margin: 1.5rem 0;
+      padding: 1.5rem 0.7rem 2rem;
     }
     .todos__single {
       width: 100%;
