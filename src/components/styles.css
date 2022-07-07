@@ -31,7 +31,7 @@
     right: 0px;
     border: none;
     font-size: 15px;
-    background-color: rgb(213, 191, 50) ;
+    background-color: #fc766aff;
     color: #fff;
     transition: 0.2s all;
     box-shadow: 0 0 10px #000;
@@ -53,7 +53,7 @@
 }
 
 div .icon {
-  color: #4869f0;
+  color: #783937ff;
 }
 .todos {
     display: flex;
@@ -63,11 +63,11 @@ div .icon {
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     width: 75%;
-    background-color: rgb(72, 105, 240);
+    background-color: #783937ff; 
   }
   .todos__heading {
     font-size: 2rem;
-    color: #0b6630;
+    color: #f1ac88ff;
     text-align: center;
   }
   
@@ -77,8 +77,8 @@ div .icon {
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
-    color: #4869f0;
-    background-color: #0b6630;
+    color: #783937ff;
+    background-color: #fc766aff;
     transition: 0.2s;
   }
   .todos__single:hover {
@@ -87,9 +87,8 @@ div .icon {
   }
   .todos__single--text {
     flex: 1;
-    padding: 5px;
     border: none;
-    font-size: 20px;
+    font-size: 0.8rem;
   }
   
   .todos__single--text:focus {
@@ -105,18 +104,28 @@ div .icon {
 
   @media (max-width: 700px) {
     .input {
-      width: 95%;
+      width: 90%;
     }
     .todos {
-      width: 95%;
-      margin-bottom: 1rem;
+      width: 98%;
+      margin-bottom: 1.5rem;
     }
     .todos__single {
       width: 100%;
     }
     .container {
-      width: 95%;
+      width: 100%;
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .todos__single--text:focus {
+      height: fit-content;
+      max-width: 5rem !important;
+    }
+    .todos__single {
+      height: fit-content;
     }
   }
 
